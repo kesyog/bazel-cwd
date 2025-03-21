@@ -1,0 +1,24 @@
+load("@rules_rust//rust:defs.bzl", "rust_binary", "rust_library", "rust_test")
+
+rust_library(
+    name = "bazel_cwd",
+    srcs = [
+        "src/lib.rs",
+    ],
+)
+
+rust_test(
+    name = "bazel_cwd_test",
+    crate = ":bazel_cwd",
+)
+
+# Binary
+rust_binary(
+    name = "test_runner",
+    srcs = [
+        "src/test_bin.rs",
+    ],
+    deps = [
+        ":bazel_cwd",
+    ],
+)
