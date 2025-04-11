@@ -1,5 +1,9 @@
 # bazel-cwd
 
+[![Crates.io Version](https://img.shields.io/crates/v/bazel-cwd)](https://crates.io/crates/bazel-cwd)
+[![docs.rs](https://img.shields.io/docsrs/bazel-cwd)](https://docs.rs/bazel-cwd/)
+[![Crates.io License](https://img.shields.io/crates/l/bazel-cwd)](https://github.com/kesyog/bazel-cwd/blob/main/LICENSE)
+
 Resolve paths in a Bazel-aware manner.
 
 As described in <https://bazel.build/docs/user-manual#running-executables>, the `bazel run` command
